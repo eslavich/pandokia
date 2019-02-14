@@ -39,6 +39,7 @@ def GET(url, args=None, cred=None):
     install_opener(opener)
 
     print("URL %s" % url)
+    print("URLARGS {}".format(url+arg_string))
     f = urlopen(url + arg_string)
     return f
 
